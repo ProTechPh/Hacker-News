@@ -1,0 +1,27 @@
+.comment-tree {
+  margin-top: var(--spacing-md);
+  padding-left: var(--spacing-lg);
+  border-left: 2px solid var(--color-border-light);
+  transition: border-color var(--transition-base);
+}
+
+.comment-tree:hover {
+  border-left-color: var(--color-border);
+}
+
+.comment-tree-loading {
+  color: var(--color-text-secondary);
+  font-size: 0.9rem;
+  padding: var(--spacing-md);
+  font-style: italic;
+  background-color: var(--color-surface);
+  border-radius: var(--radius-sm);
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .comment-tree {
+    padding-left: var(--spacing-md);
+  }
+}
+

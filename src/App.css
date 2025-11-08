@@ -1,0 +1,33 @@
+.app {
+  min-height: 100vh;
+  background-color: var(--color-background);
+  background-image: 
+    radial-gradient(circle at 20% 50%, rgba(255, 102, 0, 0.04) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(255, 102, 0, 0.04) 0%, transparent 50%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.8) 0%, transparent 100%);
+  transition: background-color var(--transition-slow);
+  position: relative;
+}
+
+.main-content {
+  padding-bottom: var(--spacing-2xl);
+  padding-top: var(--spacing-md);
+  animation: fadeIn var(--transition-slow) ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    padding: var(--spacing-md) var(--spacing-sm);
+  }
+}
