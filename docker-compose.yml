@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  hacker-news:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:80"
+    container_name: hacker-news-app
+    restart: unless-stopped
+

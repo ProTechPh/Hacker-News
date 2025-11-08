@@ -1,4 +1,25 @@
-# React + TypeScript + Vite
+# Hacker News
+
+A React + TypeScript + Vite application for browsing Hacker News stories.
+
+## Docker
+
+Pull and run the Docker image:
+
+```bash
+docker pull jericko134/hackernews:latest
+docker run -p 3000:80 jericko134/hackernews:latest
+```
+
+Or use Docker Compose:
+
+```bash
+docker-compose up
+```
+
+The application will be available at `http://localhost:3000`.
+
+## Development
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
